@@ -1,7 +1,9 @@
 package interview;
 
-/*Given a sorted circular linkedList, the start of the list may not be the smallest value. 
-write a function inorderInsert(int inValue, Node n) to insert a value into this function.*/
+/**Given a sorted circular linkedList, the start of the list may not be the smallest value. 
+*write a function inorderInsert(int inValue, Node n) to insert a value into this function.
+@author howei
+*/
 
 public class InsertIntoSortedCircularLinkedList {
 

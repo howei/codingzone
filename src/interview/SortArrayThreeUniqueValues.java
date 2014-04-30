@@ -1,7 +1,10 @@
 package interview;
 
-/*Given an array contains integers with values either be 1, 2, or 3.
-write a function to sort this array. Expected complexity O(n).*/
+/**Given an array contains integers with values either be 1, 2, or 3.
+*write a function to sort this array. Expected complexity O(n).
+@author howei
+*
+*/
 
 public class SortArrayThreeUniqueValues {
 
