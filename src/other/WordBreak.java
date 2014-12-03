@@ -6,10 +6,10 @@ import java.util.Set;
 public class WordBreak {
 
 	public static void main(String[] args) {
-		String s = "ba";
+		String s = "aaaa";
 		Set<String> dict = new HashSet<String>();
+		dict.add("aaa");
 		dict.add("a");
-		
 		System.out.println("answer is: " + wordBreak(s, dict));
 	}
 
@@ -22,11 +22,11 @@ public class WordBreak {
 		boolean[] dp = new boolean[size];
 
 		for (int i = 0; i < size; i++) {
+			if (dict.contains(s.substring(0, i + 1))) {
+				dp[i] = true;
+				continue;
+			}
 			for (int j = 0; j < i; j++) {
-				if (dict.contains(s.substring(0, i + 1))) {
-					dp[i] = true;
-					continue;
-				}
 				if (dp[j] && dict.contains(s.substring(j + 1, i + 1))) {
 					dp[i] = true;
 					break;
